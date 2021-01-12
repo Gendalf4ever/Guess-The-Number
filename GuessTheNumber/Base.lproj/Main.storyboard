@@ -167,8 +167,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="countOfTries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-xM-IoW">
-                                <rect key="frame" x="144" y="420" width="99" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="countOfTries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-xM-IoW">
+                                <rect key="frame" x="20" y="420" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -183,6 +183,7 @@
                         <outlet property="Answer" destination="dr8-cT-fKE" id="7o5-EU-zXL"/>
                         <outlet property="countOfTriesLabel" destination="rS1-0I-xQb" id="K1k-Wq-cdG"/>
                         <outlet property="countOfTriesTextField" destination="xhr-5A-kAh" id="Q1t-BU-LXv"/>
+                        <outlet property="guessButtonOutlet" destination="Eo7-2a-kio" id="A0F-FL-pzm"/>
                         <outlet property="lowerBorderLabel" destination="Qb9-Ik-jtB" id="PLI-xs-1cu"/>
                         <outlet property="lowerBorderTextField" destination="nay-8M-cWH" id="hfJ-ED-cmd"/>
                         <outlet property="someLabel" destination="bV1-Fs-85E" id="fyI-tB-WgD"/>

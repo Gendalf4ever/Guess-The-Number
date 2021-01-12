@@ -28,6 +28,7 @@ var guessedNumber = Int.random(in: 1...10)
     @IBOutlet weak var someLabel: UILabel!
     @IBOutlet weak var theNumber: UITextField!
      
+    @IBOutlet weak var guessButtonOutlet: UIButton!
     @IBOutlet weak var upperBorderTextField: UITextField!
     
     @IBOutlet weak var lowerBorderTextField: UITextField!
@@ -55,24 +56,28 @@ var guessedNumber = Int.random(in: 1...10)
      
     }
     @IBAction func guessButton(_ sender: Any) {
+        guessButtonOutlet.setTitle("Угадать", for: .normal)
         guard var counter = countOfTriesTextField.text else {return}
-        triesLabel.text = counter
         countOfTriesTextField.isHidden = true
         countOfTriesLabel.isHidden = true
         var intCounter:Int = Int(counter)!
-          //var  intCounter = 15
+        
         if counter == nil {
            intCounter = 15
              print("counter = ",intCounter)
         }
-
+        else {
+            
+        }
         print("counter = ",intCounter)
+        triesLabel.text = "Оставшееся количество попыток: " + String(intCounter)
         guard let number = theNumber.text else {return}
    
         let intNumber:Int? = Int(number)
           someLabel.isHidden = false
 
         while intCounter > 0 {
+//            triesLabel.text = "Оставшееся количество попыток: " + String(intCounter)
             if (intNumber != guessedNumber) {
                                if (intNumber ?? guessedNumber < guessedNumber){
                                     someLabel.text = "Загаданное число больше"
@@ -92,7 +97,7 @@ var guessedNumber = Int.random(in: 1...10)
                                Answer.textColor = UIColor.green
                            }
             
-                      intCounter -= 1
+                      intCounter = intCounter - 1
                 }
         }
              
